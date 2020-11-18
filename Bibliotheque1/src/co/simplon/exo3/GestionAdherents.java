@@ -7,41 +7,21 @@ public class GestionAdherents {
 
 	public static void main(String[] args) {
 		
-		Adherent lolo=null;
-		Adherent toto;
-		Adherent jero;
-		Adherent poua;
+		AdherentJavaBeans toto = new AdherentJavaBeans();
 		
-		Bibliotheque BiblioKids;
+		 toto.setNom("Dupont");
+		 toto.setDateNaissance(LocalDate.of(2002, Month.JANUARY, 12));
 		
-		LocalDate dateNaissance= LocalDate.of(2018, Month.AUGUST, 18);
-		lolo = new Adherent("Lisa", "moa", "pou@yahoo.fr", "bp",dateNaissance );
-		toto = new Adherent("Aimee", "moa", "pou@.yahoo.fr", "bp",dateNaissance);
-		jero = new Adherent("lucie", "tyu", "p@gmail.com", "bp",dateNaissance);
-		poua = new Adherent("Ai", "moa", "pou@hotmail.fr", "bp",dateNaissance);
-		
-		BiblioKids = new Bibliotheque("aa", "bb");
-		BiblioKids.inscrire(lolo);
-		BiblioKids.inscrire(toto);
-		BiblioKids.inscrire(jero);
-		BiblioKids.inscrire(poua);
-		BiblioKids.toString();
-		
-		BiblioKids.desinscrire(toto);
-		
-		//System.out.println(BiblioKids);
+		 toto.setAdresse("1, av. des Champs-Elysées, 75008 Paris");
+		 
+		 toto.toString();
+		 System.out.println(toto);
+		 
+		 
+		 }
+		 }
 		
 		
-		//lolo.toString();
-		//toto.toString();
-		
-		toto.setNom(lolo);
-		toto.toString();
-		
-		//System.out.println(lolo);
-		System.out.println(toto);
-		//System.out.println(lolo==toto);
-		
-	}
+	
 
-}
+
